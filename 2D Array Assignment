@@ -1,0 +1,44 @@
+1)1351. Count Negative Numbers in a Sorted Matrix
+
+
+class Solution {
+    public int countNegatives(int[][] grid) 
+    {
+        int count=0;
+        for(int i=0;i<grid.length;i++)
+        {
+            for(int j=0;j<grid[0].length;j++)
+            {
+                if(grid[i][j]<0)
+                {
+                    count++;
+                }
+            }
+        }
+        return count;
+        
+    }
+}
+
+
+
+
+2)867. Transpose Matrix
+
+
+class Solution {
+    public int[][] transpose(int[][] matrix)
+    {
+        int [][]newm= new int[matrix[0].length][matrix.length];
+        for(int i=0;i<matrix.length;i++)
+        {
+            for(int j=0;j<matrix[0].length;j++)
+            {
+                newm[j][i]=matrix[i][j];
+            }
+        }
+        return newm;
+
+        
+    }
+}
